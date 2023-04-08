@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Andrés Cooking con Bootstrap</title>
+
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/587aee5973.js" crossorigin="anonymous"></script>
+
+    <!-- CDN Bootstrap (CSS Y JS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Estilos CSS, acá aplico mis estilos personalizados -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- class="fixed-top d-flex align-items-center header-trasnparent" -->
+        <nav class="navbar navbar-expand-lg fixed-top narbar-dark p-md-3">
+            <!-- Logo Andres Cooking -->
+            <div class="container-fluid ">
+                <span class="navbar-brand col-sm-12 col-md-2 col-lg-2 col-xl-2 mb-0 h1 title-nav">@AndrésCooking</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse justify-content-around  col-sm-12 col-md-4 col-lg-4 col-xl-4 " id="navbarSupportedContent">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Glosario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda Cooking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recetas</a>
+                        </li>
+                    </ul>
+                    
+            <!-- Buscador de Recetas -->
+                    <form class="d-flex col-sm-12 col-md-4 col-lg-4 col-xl-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busca tu receta" aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Buscar</button>   
+                    </form>
+                </div>
+            </div>
+        </nav>  
+    </header>
+    <main>
+        <!-- Carrousel -->
+        <div id="carouselExampleIndicators" class="banner-image carousel slide justify-content-center align-items-center">
+            <!-- Flechas indicador derecha-izquierda-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Imagenes Carrousel -->
+            <!-- Target 1 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/foto portada.jpg" class="d-block w-100 vh-100" alt="Imagen Portada">
+                    <h1 class="title-img-carrousel">Ven y prepara mis #RecetasCooking</h1>
+                    <button class="btn btn-warning btn-img-carrousel shadow p-3 mb-5  rounded
+                    ">Ingresa aqui</button>
+                </div>
+            <!-- Target 2 -->
+                <div class="carousel-item imgtips-carrousel">
+                    <img src="./img/Andrescooking-1.jpg" class="d-block w-50 vh-100 shadow-lg  rounded" alt="Andres recomienda">
+                    <h1 class="title-img2-carrousel">Entra y mira nuestros productos con #CookingRecomienda</h1>
+                </div>
+            <!-- Target 3 -->
+                <div class="carousel-item imgYouTube-carrousel">
+                    <img src="./img/Cocina conmigo youtube.jpg" class="d-block w-100 vh-100 shadow-lg rounded" alt="Canal de YouTube">
+                    <h1 class="title-img3-carrousel">Cocina con nosotros y suscribete en nuestro canal</h1>
+                    <button class="btn btn-warning btn-img3-carrousel shadow rounded
+                    ">Suscribete <i class="fa-brands fa-youtube fa-beat"></i></button>
+                </div>
+            </div>
+            <!-- Botones inferiores indicadores derecha-izquierda-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Section Destacadas de la semana -->
+        <div class="container-fluid bg-warning" style="height: 200px;">
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
