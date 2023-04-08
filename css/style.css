@@ -1,5 +1,5 @@
 *{
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 }
 .banner-image{
     background-size: cover;
@@ -104,3 +104,57 @@
     top: 50%;
     left: 70%;
 }
+
+.recipes__featured{
+    height: 200px;
+    background-color: rgb(247, 175, 67);
+    border: none;
+    color: antiquewhite;
+    /* margin-top: 15px;  */
+    /* padding: 50px; */
+}
+.paragraph__section2{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+/* .img-recipes-featured{
+    margin: 0%;
+    padding: 0;
+    
+} */
+
+.img__featured{
+    
+    border-radius: 5px;
+    width: 400px; 
+    margin-left: 40px;
+    transition: all 0.5s ease;
+}
+
+.img__featured:hover{
+    transform: scale(0.9);
+}
+.img__featured2{
+    border-radius: 5px;
+    width: 400px; 
+    margin-left: 40px;
+}
+.img__featured2:hover{
+    transform: scale(0.9);
+}
+.img__featured3{
+    border-radius: 5px;
+    width: 400px; 
+    margin-left: 40px;
+}
+.img__featured3:hover{
+    transform: scale(0.9);
+}
+/* .img_recipes__featured{
+    background-image: url(../img/Portada\ Andres.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
