@@ -19,13 +19,6 @@
 .nav-link:hover{
     color: black;
 }
-/* .nav-link:active{
-    color: black;
-} */
-/* .nav-link:visited{
-    color: antiquewhite;
-} */
-
 .btn{
     color: antiquewhite;
 }
@@ -35,23 +28,17 @@
     font-family:'Tilt Warp', cursive;
     color: rgb(244, 183, 17);
     text-shadow: 0 0 8px rgba(0, 0, 0, 2);
-    /* background-color: rgb(241, 227, 209); */
-    /* border-radius: 5px; */
     position: absolute;
     top: 40%;
     left: 25%;
-    /* transform: translate( -50%); */
-
 }
 
 .title-img2-carrousel{
     font-size: 48px;
     font-family:'Tilt Warp', cursive;
     color: rgb(244, 183, 17);
-    /* text-shadow: 0 0 8px rgba(0, 0, 0, 2); */
     text-shadow: 0 0 8px #1f1e1c;
     text-align: center;
-    /* background-color: rgb(241, 227, 209); */
     border-radius: 5px;
     position: absolute;
     top: 40%;
@@ -68,15 +55,11 @@
     left: 70%;
 
 }
-
 .imgtips-carrousel{
     background-color: #7d6b6b;
-
-    /* box-shadow: 5px 8px 12px black; */
 }
 
 .imgYouTube-carrousel{
-    /* background-size: cover; */
     opacity: 0.9;
 }
 
@@ -84,22 +67,18 @@
     font-size: 48px;
     font-family:'Tilt Warp', cursive;
     color: rgb(244, 183, 17);
-    /* text-shadow: 0 0 8px rgba(0, 0, 0, 2); */
     text-shadow: 0 0 8px #1f1e1c;
     text-align: center;
-    /* background-color: rgb(241, 227, 209); */
     border-radius: 5px;
     position: absolute;
     top: 40%;
     left: 10%;
-    /* transform: translate( -50% -50%); */
 }
 
 .btn-img3-carrousel{
     font-size: 24px;
     font-family:'Tilt Warp', cursive;
     color: antiquewhite;
-    /* background-color: antiquewhite; */
     position: absolute;
     top: 50%;
     left: 70%;
@@ -110,36 +89,21 @@
     background-color: rgb(247, 175, 67);
     border: none;
     color: antiquewhite;
-    /* margin-top: 15px;  */
-    /* padding: 50px; */
 }
 .paragraph__section2{
     font-size: 30px;
     margin-top: 15px;
     margin-left: 25px;
 }
-
-/* .img-recipes-featured{
-    margin: 0%;
-    padding: 0;
-    
-} */
-
 .img__featured{
-    
     border-radius: 5px;
     width: 400px; 
     margin-left: 40px;
-    transition: all 0.5s ease;
+    box-shadow: 0 0 6px black;
+    transition: all 0.8s ease;
 }
-
 .img__featured:hover{
     transform: scale(0.9);
-}
-.img__featured2{
-    border-radius: 5px;
-    width: 400px; 
-    margin-left: 40px;
 }
 .img__featured2:hover{
     transform: scale(0.9);
@@ -152,9 +116,40 @@
 .img__featured3:hover{
     transform: scale(0.9);
 }
-/* .img_recipes__featured{
-    background-image: url(../img/Portada\ Andres.jpg);
-    background-position: left;
+
+.container__form{
+    background-image: url(../img/Img-form.jpg);
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-} */
+}
+footer{
+    height: 200px;
+}
+
+.logoIg{
+    width: 40px;
+    height: 40px;
+    border: #1f1e1c;
+    background-color: #df1bc1;
+    margin-left: 25px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border: #1f1e1c;
+    margin-left: 25px;
+}
+.fa-instagram{
+    font-size: 30px;
+}
+.fa-facebook-f{
+    font-size: 25px;
+}
+.fa-youtube{
+    font-size: 28px;
+}
+.fa-tiktok{
+    font-size: 25px;
+}
+

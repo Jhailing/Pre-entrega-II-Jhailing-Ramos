@@ -22,8 +22,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- class="fixed-top d-flex align-items-center header-trasnparent" -->
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg fixed-top narbar-dark p-md-3">
             <!-- Logo Andres Cooking -->
             <div class="container-fluid ">
@@ -105,18 +104,21 @@
             <h3 class="fst-italic paragraph__section2">Destacadas Cooking de la semana... </h3>   
         </div>
         <!-- Container Imagenes -->
-        <div class="container-fluid bg-warning-subtle img_recipes__featured">
+        <div class="container-fluid bg-warning-subtle img_recipes__featured"> 
             <div class="row">
+                <!-- Container recipe 1 -->
                 <div class="col recipe1">
                     <a href="https://www.instagram.com/p/CpQFxD6OEI0/" target="_blank">
                         <img class="my-5 img__featured" src="./img/recipe 1.jpg" width="400px" height="300px" alt="Pasta Espinaca y Queso"> 
                     </a>   
                 </div>
+                <!-- Container recipe 2 -->
                 <div class="col recipe2">
                     <a href="https://www.instagram.com/p/CoSZoZlPUgh/" target="_blank">
                         <img class="my-5 img__featured" src="./img/Canele.jpg" width="400px" height="300px" alt="Canele">
                     </a>
                 </div>
+                <!-- Container recipe 3 -->
                 <div class="col recipe3">
                     <a href="https://www.instagram.com/p/CoKmHsAtL9d/" target="_blank">
                         <img class="my-5 img__featured" src="./img/Garlic Naan.jpg" width="400px" height="300px" alt="Garlic Naan">
@@ -125,7 +127,70 @@
             </div>
         </div>
         <!-- Sección Formulario -->
+        <!-- Container tips -->
+        <div class="container-fluid shadow my-2 rounded text-center recipes__featured">
+            <h2 class="p-4 fst-italic title__section2">"Si tienes medio limón con clavos de olor en tu nevera, te ayudará absorver esos malos olores y a la vez aromatizará tu nevera"</h2>
+            <h3 class=" paragraph__section2">Descubre más de nuestros #CookingTips haciendo click <button class="btn btn-light"><a href="">aquí</a></button></h3>   
+        </div>
+        <!-- Container Form -->
+        <div class="container p-5 w-50 container__form">
+            <h2>Comentarios</h2>
+            <form class="row d-block">
+                <div class="col-md-6">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Escribe tu nombre">
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Escribe tu apellido">
+                </div>
+                <div class="col-md-8 mt-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Jhai@email.com">
+                </div>
+                <div class="input-group w-100 mt-3 d-block">
+                    <label class="form-label">Comentarios</label>
+                    <textarea class="form-control w-100" aria-label="With textarea" placeholder="Escribe tus comentarios"></textarea>
+                </div>
+                <div class="col-12 mt-4 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-warning ">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer class="bg-warning">
+        <div class="container">
+            <div class="row justify-content-between align-content-center p-3 social__media">
+                <!-- Section Social Media -->
+                <ul class="col-12 list-unstyled d-flex  justify-content-center mt-3">
+                    <!-- Facebook -->
+                    <li><a class="btn btn-primary bg-primary logo" href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                    </a> 
+                    </li>
+                    <!-- Instagram -->
+                    <li><a class="btn btn-primary d-flex justify-content-center logoIg" href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    </li>
+                    <!-- You Tube -->
+                    <li><a class="btn btn-primary bg-danger d-flex justify-content-center logo" href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button">
+                    <i class="fab fa-youtube"></i>
+                    </a>
+                    </li>
+                    <!-- TikTok -->
+                    <li><a class="btn btn-primary bg-black d-flex justify-content-center logo" href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
+                    <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    </li>
+                </ul>
+                <!-- Section copyright -->
+                <div class="col-12 d-flex  justify-content-center mt-5">
+                    <span>Sitio Web creado con &#128151 por &copy;JhaiRamos</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
