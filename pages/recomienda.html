@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Cooking Recomienda</title>
+
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/587aee5973.js" crossorigin="anonymous"></script>
+
+    <!-- CDN Bootstrap (CSS Y JS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Estilos CSS, acá aplico mis estilos personalizados -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/1erTrabajo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid logo__header">
+        <nav class="navbar navbar-expand-lg p-md-3">
+            <!-- Andres Cooking Logo -->
+            <div class="container-fluid ">
+                <span class="navbar-brand col-sm-12 col-md-2 col-lg-2 col-xl-2 mb-0 h1 title-nav">@AndrésCooking</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- navigation menu -->
+                <div class="collapse navbar-collapse justify-content-around col-sm-12 col-md-4 col-lg-4 col-xl-4" id="navbarSupportedContent">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./glosario.html">Glosario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recomienda.html">Tienda Cooking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tips.html">Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recetas.html">Recetas</a>
+                        </li>
+                    </ul>       
+            <!-- recipes finder -->
+                    <form class="d-flex col-sm-12 col-md-4 col-lg-4 col-xl-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busca tu receta" aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Buscar</button>   
+                    </form>
+                </div>
+            </div>
+        </nav>  
+    </header>
+<main>
+    <!-- container to go to start -->
+        <div class="container-fluid col-sm-12">
+            <a class="btn btn__start" href="/index.html">Inicio > Tienda Cooking</a> 
+        </div>
+    <!-- recommended products section -->
+        <h2 class="title__published">Productos recomendados</h2>
+            <p class="tips__paragraph recommended">Aquí te muestro los productos que uso en mi cocina y que seguramente te facilitarán la vida a la hora de cocinar.</p>
+        </div>
+    <!-- images gallery -->
+        <div class="imgs__recommended">   
+            <div class="img__recommended">
+                <h3>Garject</h3><i>(Insertar img con link a la pagina de descripcion del producto y compra)</i>
+            </div>
+            <div class="img__recommended">
+                <h3>Murci & Guaca</h3>
+            </div>
+            <div class="img__recommended">
+                <h3>Spice Jars</h3>
+            </div>
+        </div>
+</main>
+    <!-- Footer -->
+    <footer class="bg-warning">
+        <div class="container">
+            <div class="row justify-content-between align-content-center social__media">
+                <!-- Section Social Media -->
+                <ul class="col-12 list-unstyled d-flex  justify-content-center mt-3">
+                    <!-- Facebook -->
+                    <li>
+                        <a class="btn btn-primary bg-primary logo" href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                        </a> 
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                        <a class="btn btn-primary d-flex justify-content-center logoIg" href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- You Tube -->
+                    <li>
+                        <a class="btn btn-primary bg-danger d-flex justify-content-center logo" href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <!-- TikTok -->
+                    <li>
+                        <a class="btn btn-primary bg-black d-flex justify-content-center logo" href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
+                        <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Section copyright -->
+                <div class="col-12 d-flex  justify-content-center mt-5">
+                    <span>Sitio Web creado con &#128151 por &copy;JhaiRamos</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -17,37 +17,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    <!-- Estilos CSS, acá aplico mis estilos personalizados -->
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-top narbar-dark p-md-3">
-            <!-- Logo Andres Cooking -->
+    <!-- Header -->
+    <header class="container-fluid logo__header">
+        <nav class="navbar navbar-expand-lg">
+            <!-- Andres Cooking Logo -->
             <div class="container-fluid ">
                 <span class="navbar-brand col-sm-12 col-md-2 col-lg-2 col-xl-2 mb-0 h1 title-nav">@AndrésCooking</span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            <!-- Menú de navegación -->
-                <div class="collapse navbar-collapse justify-content-around  col-sm-12 col-md-4 col-lg-4 col-xl-4 " id="navbarSupportedContent">
-                    <ul class="nav">
+                <!-- navigation menu -->
+                <div class="collapse navbar-collapse  justify-content-around ms-5" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Glosario</a>
+                            <a class="nav-link" aria-current="page" href="./pages/glosario.html">Glosario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tienda Cooking</a>
+                            <a class="nav-link" href="./pages/recomienda.html">Tienda Cooking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Recetas</a>
-                        </li>
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li> 
                     </ul>
-                    
-            <!-- Buscador de Recetas -->
+                <!-- recipes finder -->
                     <form class="d-flex col-sm-12 col-md-4 col-lg-4 col-xl-4" role="search">
                         <input class="form-control me-2" type="search" placeholder="Busca tu receta" aria-label="Search">
                         <button class="btn btn-warning" type="submit">Buscar</button>   
@@ -57,37 +54,37 @@
         </nav>  
     </header>
     <main>
-        <!-- Carrousel -->
+        <!-- Carrousel Indicator (<>)-->
         <div id="carouselExampleIndicators" class="banner-image carousel slide justify-content-center align-items-center">
-            <!-- Flechas indicador derecha-izquierda-->
+            <!-- carousel arrows (left-right) -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <!-- Imagenes Carrousel -->
+            <!-- Carrousel Images-->
             <!-- Target 1 -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active target1">
                     <img src="./img/foto portada.jpg" class="d-block w-100 vh-100" alt="Imagen Portada">
                     <h1 class="title-img-carrousel">Ven y prepara mis #RecetasCooking</h1>
-                    <button class="btn btn-warning btn-img-carrousel shadow p-3 mb-5  rounded
-                    ">Ingresa aqui</button>
+                    <a class="btn btn-warning btn-img-carrousel shadow p-3 rounded 
+                    " href="./pages/recetas.html">Ingresa aqui</a>
                 </div>
             <!-- Target 2 -->
                 <div class="carousel-item imgtips-carrousel">
-                    <img src="./img/Andrescooking-1.jpg" class="d-block w-50 vh-100 shadow-lg rounded" alt="Andres recomienda">
-                    <h1 class="title-img2-carrousel">Entra y mira nuestros productos con #CookingRecomienda</h1>
+                    <img src="./img/Andrescooking-1.jpg" class="d-block w-50 vh-100 shadow-lg rounded img-carrousel2" alt="Andres recomienda">
+                    <h1 class="title-img2-carrousel">Entra y mira nuestros productos con <a class="link__recomienda" href="./pages/recomienda.html">#CookingRecomienda</a></h1>
                 </div>
             <!-- Target 3 -->
                 <div class="carousel-item imgYouTube-carrousel">
                     <img src="./img/Cocina conmigo youtube.jpg" class="d-block w-100 vh-100 shadow-lg rounded" alt="Canal de YouTube">
                     <h1 class="title-img3-carrousel">Cocina con nosotros y suscribete en nuestro canal</h1>
-                    <button class="btn btn-warning btn-img3-carrousel shadow rounded
-                    ">Suscribete <i class="fa-brands fa-youtube fa-beat"></i></button>
+                    <a href="https://www.youtube.com/c/andrescooking" target="_blank" class="btn btn-warning btn-img3-carrousel shadow rounded
+                    ">Suscribete <i class="fa-brands fa-youtube fa-beat"></i></a>
                 </div>
             </div>
-            <!-- Botones inferiores indicadores derecha-izquierda-->
+            <!-- bottom buttons (right-left indicators)-->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -97,92 +94,98 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- Section Destacadas de la semana -->
+        <!-- featured section of the week -->
         <!-- Container title -->
-        <div class="container-fluid shadow my-2 rounded text-center recipes__featured">
-            <h2 class="p-4 title__section2">Mmm... ujuuuu!!!</h2>
+        <div class="container-fluid shadow my-2 p-5 rounded text-center recipes__featured">
+            <h2 class="title__section2">Mmm... ujuuuu!!!</h2>
             <h3 class="fst-italic paragraph__section2">Destacadas Cooking de la semana... </h3>   
         </div>
-        <!-- Container Imagenes -->
-        <div class="container-fluid bg-warning-subtle img_recipes__featured"> 
+        <!-- Container Images -->
+        <div class="container">
             <div class="row">
-                <!-- Container recipe 1 -->
-                <div class="col recipe1">
-                    <a href="https://www.instagram.com/p/CpQFxD6OEI0/" target="_blank">
-                        <img class="my-5 img__featured" src="./img/recipe 1.jpg" width="400px" height="300px" alt="Pasta Espinaca y Queso"> 
-                    </a>   
-                </div>
-                <!-- Container recipe 2 -->
-                <div class="col recipe2">
+                <!-- Recipe 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 container-galeria">
                     <a href="https://www.instagram.com/p/CoSZoZlPUgh/" target="_blank">
-                        <img class="my-5 img__featured" src="./img/Canele.jpg" width="400px" height="300px" alt="Canele">
+                    <img class="img_galeria" src="./img/Canele.jpg" alt="Galeria Imagen">
                     </a>
                 </div>
-                <!-- Container recipe 3 -->
-                <div class="col recipe3">
+                <!-- Recipe 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CpQFxD6OEI0/" target="_blank">
+                    <img class="img_galeria" src="./img/recipe 1.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 container-galeria">
                     <a href="https://www.instagram.com/p/CoKmHsAtL9d/" target="_blank">
-                        <img class="my-5 img__featured" src="./img/Garlic Naan.jpg" width="400px" height="300px" alt="Garlic Naan">
+                    <img class="img_galeria" src="./img/Garlic Naan.jpg" alt="Galeria Imagen">
                     </a>
                 </div>
             </div>
         </div>
-        <!-- Sección Formulario -->
-        <!-- Container tips -->
-        <div class="container-fluid shadow my-2 rounded text-center recipes__featured">
+
+        <!-- Container tips section-->
+        <div class="container-fluid shadow my-3 rounded text-center recipes__featured">
             <h2 class="p-4 fst-italic title__section2">"Si tienes medio limón con clavos de olor en tu nevera, te ayudará absorver esos malos olores y a la vez aromatizará tu nevera"</h2>
-            <h3 class=" paragraph__section2">Descubre más de nuestros #CookingTips haciendo click <button class="btn btn-light"><a href="">aquí</a></button></h3>   
+            <h3 class=" paragraph__section2">Descubre más de nuestros #CookingTips haciendo click<a class=" btn btn_tips" href="./pages/tips.html">aquí</a>
+            </h3>   
         </div>
         <!-- Container Form -->
-        <div class="container p-5 w-50 container__form">
+        <a name="Contacto"></a>
+        <div class="container p-5 mb-3 container__form">
             <h2>Comentarios</h2>
-            <form class="row d-block">
-                <div class="col-md-6">
+            <form class="row ">
+                <div class="col-md-6 col-ms-12">
                     <label class="form-label">Nombre</label>
                     <input type="text" class="form-control" placeholder="Escribe tu nombre">
                 </div>
-                <div class="col-md-6 mt-3">
+                <div class="col-md-6 col-ms-12">
                     <label class="form-label">Apellido</label>
                     <input type="text" class="form-control" placeholder="Escribe tu apellido">
                 </div>
-                <div class="col-md-8 mt-3">
+                <div class="col-md-8 col-ms-12 mt-3">
                     <label class="form-label">Email</label>
                     <input type="email" class="form-control" placeholder="Jhai@email.com">
                 </div>
-                <div class="input-group w-100 mt-3 d-block">
+                <div class="input-group w-100 mt-3 d-block col-ms-12">
                     <label class="form-label">Comentarios</label>
                     <textarea class="form-control w-100" aria-label="With textarea" placeholder="Escribe tus comentarios"></textarea>
                 </div>
-                <div class="col-12 mt-4 d-flex justify-content-center">
+                <div class="col-sm-12 mt-4 d-flex justify-content-center">
                     <button type="submit" class="btn btn-warning ">Enviar</button>
                 </div>
             </form>
         </div>
     </main>
-    <!-- Footer -->
-    <footer class="bg-warning">
+    <!-- Footer section -->
+    <footer class="bg-secondary">
         <div class="container">
-            <div class="row justify-content-between align-content-center p-3 social__media">
+            <div class="row justify-content-between align-content-center social__media">
                 <!-- Section Social Media -->
                 <ul class="col-12 list-unstyled d-flex  justify-content-center mt-3">
                     <!-- Facebook -->
-                    <li><a class="btn btn-primary bg-primary logo" href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                    </a> 
+                    <li>
+                        <a class="btn btn-primary bg-primary logo" href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                        </a> 
                     </li>
                     <!-- Instagram -->
-                    <li><a class="btn btn-primary d-flex justify-content-center logoIg" href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button">
-                    <i class="fab fa-instagram"></i>
-                    </a>
+                    <li>
+                        <a class="btn btn-primary d-flex justify-content-center logoIg" href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button">
+                        <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                     <!-- You Tube -->
-                    <li><a class="btn btn-primary bg-danger d-flex justify-content-center logo" href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button">
-                    <i class="fab fa-youtube"></i>
-                    </a>
+                    <li>
+                        <a class="btn btn-primary bg-danger d-flex justify-content-center logo" href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button">
+                        <i class="fab fa-youtube"></i>
+                        </a>
                     </li>
                     <!-- TikTok -->
-                    <li><a class="btn btn-primary bg-black d-flex justify-content-center logo" href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
-                    <i class="fa-brands fa-tiktok"></i>
-                    </a>
+                    <li>
+                        <a class="btn btn-primary bg-black d-flex justify-content-center logo" href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
+                        <i class="fa-brands fa-tiktok"></i>
+                        </a>
                     </li>
                 </ul>
                 <!-- Section copyright -->

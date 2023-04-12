@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Recetas Andrés Cooking</title>
+
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/587aee5973.js" crossorigin="anonymous"></script>
+
+    <!-- CDN Bootstrap (CSS Y JS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Estilos CSS, acá aplico mis estilos personalizados -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid logo__header">
+        <nav class="navbar navbar-expand-lg p-md-3">
+            <!-- Andres Cooking Logo-->
+            <div class="container-fluid ">
+                <span class="navbar-brand col-sm-12 col-md-2 col-lg-2 col-xl-2 mb-0 h1 title-nav">@AndrésCooking</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- navigation menu -->
+                <div class="collapse navbar-collapse justify-content-around  col-sm-12 col-md-4 col-lg-4 col-xl-4 " id="navbarSupportedContent">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./glosario.html">Glosario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recomienda.html">Tienda Cooking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tips.html">Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recetas.html">Recetas</a>
+                        </li>
+                    </ul>
+                    
+            <!-- recipes finder -->
+                    <form class="d-flex col-sm-12 col-md-4 col-lg-4 col-xl-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busca tu receta" aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Buscar</button>   
+                    </form>
+                </div>
+            </div>
+        </nav>  
+    </header>
+    <main>
+        <!-- container to go to start -->
+        <div class="container-fluid col-sm-12">
+            <a class="btn btn__start" href="/index.html">Inicio > Recetas</a> 
+        </div>
+        <!-- recipes finder section main -->
+        <div class="container d-flex justify-content-center">
+            <div class="input-group col-sm-12 w-75">
+                <input type="text" class="form-control " placeholder="Encuentra tu receta" aria-label="Encuentra tu receta" aria-describedby="button-addon2">
+                <button class="btn btn-warning" type="button" id="button-addon2"><i class="bi bi-search-heart"></i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 18 18">
+                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/></svg></button>
+            </div>
+        </div>
+        <!-- image gallery -->
+        <section class="container">
+            <div class="text-center pt-5">
+                <h1>Galeria de Recetas</h1>
+                <p class="paragraph__recipes">Animate a prepararlas desde la más fácil a la más compleja, enamorate de cada ingrediente, y comparte conmigo etiquetándome con el hashtag #andrescooking</p>
+            </div>
+            <div class="row">
+                <!-- Recipe 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/Cpxf8baLAkR/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/PastaAmatriciana.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 2 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CmxPLbPojYu/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Queso-Brie-horno.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 3 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CgW3xoDv84x/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Risotto-Funghi.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 4 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CpQFxD6OEI0/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/recipe 1.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 5 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CoaBm5Yj-BL/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Tacos-Carne-Asada .jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 6 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/Com11pHrjs_/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Torta de Naranja.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 7 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/Cnj8-DOKGsn/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Ensalada.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 8 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CoawV9qsb7D/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Milanesa de Carne.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+                <!-- Recipe 9 -->
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 container-galeria">
+                    <a href="https://www.instagram.com/p/CpDWJr4JFbv/?hl=es" target="_blank">
+                    <img class="img_galeria" src="../img/Risotto Camarones.jpg" alt="Galeria Imagen">
+                    </a>
+                </div>
+            </div>
+        </section>
+    <!-- Pagination -->
+        <section>
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination d-flex justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-warning">
+        <div class="container">
+            <div class="row justify-content-between align-content-center social__media">
+                <!-- Section Social Media -->
+                <ul class="col-12 list-unstyled d-flex  justify-content-center mt-3">
+                    <!-- Facebook -->
+                    <li>
+                        <a class="btn btn-primary bg-primary logo" href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                        </a> 
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                        <a class="btn btn-primary d-flex justify-content-center logoIg" href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- You Tube -->
+                    <li>
+                        <a class="btn btn-primary bg-danger d-flex justify-content-center logo" href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <!-- TikTok -->
+                    <li>
+                        <a class="btn btn-primary bg-black d-flex justify-content-center logo" href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
+                        <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Section copyright -->
+                <div class="col-12 d-flex  justify-content-center mt-5">
+                    <span>Sitio Web creado con &#128151 por &copy;JhaiRamos</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
